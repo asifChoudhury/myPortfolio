@@ -365,7 +365,7 @@ button:hover {
 
 @media screen and (min-width: 550px) {
     #home {
-        background-image: url(/img/backgroundImg.jpg);
+        background-image: url("/img/backgroundImg.jpg");
     }
 }
 
