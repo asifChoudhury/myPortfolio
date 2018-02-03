@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+}
+
+#header-container {
+    display: block;
+}
+
+/*#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}*/
+
+#header {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#header-name-title,
+#header-menu {
+    display: block;
+    color: #fff;
+}
+#header-name-title {
+    /*position: fixed;*/
+    left: 10px;
+    padding: 10px;
+}
+
+#header-name {
+    font-size: 17px;
+}
+
+#header-title {
+    font-size: 10px;
+}
+
+#header-menu {
+    font-size: 13px;
+    text-align: right;
+    /*position: fixed;*/
+    right: 0;
+}
+
+li {
+    list-style: none;
+}
