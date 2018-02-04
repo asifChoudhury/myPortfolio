@@ -1,52 +1,411 @@
+html,
 body {
     width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding:0;
 }
 
-#header-container {
+body {
     display: block;
-}
-
-/*#background-img {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    border: 0;
+    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    color: black;
+    text-align:center;
+}
+
+#container {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#home {
+    position: relative;
+    color: white;
+    height: 100vh;
+    min-height: 350px;
+    background-color: #252a30;
     background-size: cover;
-}*/
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
-#header {
+#menu {
+    padding: 5%;
+}
+
+#menu a{
+    padding: 5%;
+    padding-bottom: 1%;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: orange;
+}
+
+#link-projects {
+    padding-top: 10%;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+#link-projects a {
+    font-size: 1.8em;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+}
+
+#link-projects:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#link-projects a:hover {
+    color: orange;
+}
+
+main {
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.project-description p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 0 5%;
+}
+
+#form-title {
+    font-size: 2.8em;
+    margin: 0 40%;
+    padding: 1em 0;
+}
+
+#form-title:hover {
+    background-color: #252a30;
+    color: yellow;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+form {
     display: block;
-    width: 100%;
-    padding-top: 20px;
 }
 
-#header-name-title,
-#header-menu {
-    display: block;
-    color: #fff;
-}
-#header-name-title {
-    /*position: fixed;*/
-    left: 10px;
-    padding: 10px;
-}
-
-#header-name {
-    font-size: 17px;
+input,
+textarea {
+    color: white;
+    background-color: #252a30;
+    margin: 2px auto;
+    font-size: 2em;
+    border: 1px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
-#header-title {
-    font-size: 10px;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
-#header-menu {
-    font-size: 13px;
-    text-align: right;
-    /*position: fixed;*/
-    right: 0;
+button {
+    background-color: #FED766;
+    color: black;
+    margin: 15px 0 auto;
+    font-size: 2em;
+    border: 2px solid black;
+    padding: 5px 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
-li {
-    list-style: none;
+button:hover {
+    background-color: #252a30;
+    color: #FED766;
+    font-weight: 800;
+}
+
+#footer {
+    font-size: 1.3em;
+    padding: 5% 0;
+    background-color: #252a30;
+    color: #93a4aa;
+}
+
+#social-links {
+    padding: 1% 0;
+}
+
+.social {
+    padding: 0 1em;
+}
+
+.social a:hover {
+    zoom: 2;
+    color: #FED766;
+}
+
+.social a {
+    color: #93a4aa;
+}
+
+@media screen and (min-width: 320px) {
+    img {
+        width: 300px;
+        height: 220px;
+    }
+
+    #menu a {
+        font-size: 16px;
+    }
+
+    #bio {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+        margin: 25% 0;
+    }
+
+    #name {
+        font-size: 2.5em;
+    }
+
+    #title {
+        font-size: 1.4em;
+    }
+
+    #description {
+        margin-top: 15%;
+        font-size: 1.2em;
+    }
+
+    #link-projects {
+        margin-top: 50%;
+        padding: 0;
+        bottom: 0;
+    }
+
+    #link-projects a {
+        font-size: 1.3em;
+    }
+
+    #projects-section-header {
+        font-size: 2.8em;
+        color: black;
+    }
+
+    .project {
+        width: 80%;
+        display: block;
+        margin: 5% auto;
+        padding: 0;
+        color: #93a4aa;
+        border-bottom: 1px solid #93a4aa;
+        box-shadow:0 8px 6px -6px #93a4aa;
+    }
+
+    .project-title {
+        color: black;
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    #project6 {
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .project-description a{
+        text-decoration: none;
+    }
+
+    .project-title:hover{
+        display: block;
+        margin: 0 30%;
+        border-radius: 20px;
+        zoom: 1.1;
+    }
+
+    #contact {
+        padding-bottom: 3%;
+        font-size: .7em;
+        text-align: center;
+        color: black;
+        background-color: #FED766;
+    }
+
+    #form-title,
+    #form-name-email,
+    #form-phone-website,
+    #form-message {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #form-name,
+    #form-email,
+    #form-phone,
+    #form-website,
+    #form-message {
+        padding: 1% 0;
+    }
+
+    button {
+        background-color: #FED766;
+        color: black;
+        margin: 0 auto;
+        font-size: 2em;
+        border: 2px solid black;
+        padding: 5px 30px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #menu a {
+        font-size: 2em;
+    }
+
+    #bio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height:30%;
+        width:50%;
+        margin: -5% 0 0 -25%;
+    }
+
+    #name {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    #title {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #description {
+        margin-top: 5%;
+        font-size: 1.3em;
+    }
+
+    #link-projects {
+        margin-top: 20%;
+        padding-top: 10%;
+    }
+
+    #link-projects a {
+        font-size: 1.4em;
+    }
+
+    #projects-section-header {
+        font-size: 3em;
+        color: black;
+    }
+
+    .project {
+        margin: 0 auto;
+        padding: 3% 0;
+    }
+
+    #contact {
+        color: black;
+        background-color: #FED766;
+        padding: 2% 0;
+    }
+
+    input {
+        width: 24em;
+    }
+
+    textarea {
+        height: 10em;
+        width: 50em;
+        max-width: 100%;
+    }
+
+    #form-name-email,
+    #form-phone-website,
+    #form-message {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #form-title {
+        width: 13%;
+        font-size: 3em;
+        margin: 0 auto;
+    }
+
+    #form-namme-email,
+    #form-phone-website {
+        display: block;
+    }
+
+    #form-name,
+    #form-email,
+    #form-phone,
+    #form-website {
+        display: inline-block;
+        padding: 0.5em;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    #home {
+        background-image: url("../img/backgroundImg.jpg");
+    }
+}
+
+@media screen and (min-width: 880px) {
+    #menu a {
+        font-size: 2.5em;
+    }
+
+    #name {
+        font-size: 4.5em;
+        margin: 0;
+    }
+
+    #title {
+        font-size: 2.4em;
+        margin: 0;
+    }
+
+    #description {
+        margin-top: 5%;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #projects {
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
 }
